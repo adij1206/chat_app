@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/request_user_profile_image"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/profile_image"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/request_user_profile_name"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="User Nmae"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"/>
+
+                <ImageView
+                    android:id="@+id/request_user_online_status"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/file"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/request_user_status"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="16sp"
+                android:paddingTop="3dp"
+                android:textAlignment="textStart"/>
+
+            <LinearLayout
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/chat_request_accept_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Accept"
+                    android:textSize="10sp"
+                    android:background="@android:color/holo_green_light"
+                    android:visibility="invisible"
+                    />
+                <Button
+                    android:id="@+id/chat_request_decline_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Decline"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@android:color/holo_red_light"
+                    android:visibility="invisible"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
